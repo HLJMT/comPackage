@@ -2,15 +2,17 @@
 
 /**
  * 判断是否
- * @param {String|Number} val
+ * @param {String} val
  * @author hongliang 
  */
 export function isno(val) {
-    if (val == 1) {
+    if (val == '1') {
         return '是'
-    } else {
+    } else if (val == '0') {
         return '否'
-    } 
+    } else {
+        return '--'
+    }
 }
 
 /**
